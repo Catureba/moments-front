@@ -1,0 +1,23 @@
+ul {
+    font-size: 22px;
+}
+
+a, li, ul {
+    display: inline-block;
+}
+
+img {
+    width: 120px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.headerConteiner {
+    background-color: var(--color3);
+}
+.box{
+    width: 1200px;
+    margin: 0 auto;
+}
