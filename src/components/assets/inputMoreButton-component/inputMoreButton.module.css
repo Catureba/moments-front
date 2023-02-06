@@ -1,0 +1,32 @@
+form,input,button{
+    display: inline-block; 
+}
+input{
+    background-color: var(--color2);
+    border: 2px solid var(--color4);
+    border-right: none;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 8px 0px 0px 8px;
+    text-align: center;
+    width: 140px;
+}
+input:focus{
+    border-color: var(--color2);
+    content: 'te amo';
+}
+button{
+    font-size: 16px;
+    padding: 4px;
+    background-color: var(--color2);
+    border: 2px solid var(--color4);
+    border-radius: 0 8px 8px 0 ;
+    color: var(--color5);
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--color5);
+    color: var(--color1);
+    border-color: var(--color5);
+}

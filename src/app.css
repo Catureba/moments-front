@@ -10,4 +10,10 @@ body{
     background-color: var(--color1);
     padding: 0;
     margin: 0;
+    font-family: 'Itim', cursive;
+    color: var(--color5);
+}
+a{
+  text-decoration: none;
+  color: var(--color5);
 }

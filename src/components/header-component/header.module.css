@@ -1,23 +1,35 @@
-ul {
-    font-size: 22px;
-}
-
-a, li, ul {
-    display: inline-block;
-}
-
-img {
-    width: 120px;
-}
-
-li {
-    margin: 0 10px;
-}
-
 .headerConteiner {
+    width: 100vw;
     background-color: var(--color3);
 }
-.box{
+
+.box {
     width: 1200px;
     margin: 0 auto;
+    display: table;
 }
+.logo, .searchBox, .menu{
+    display: table-cell;
+    vertical-align: middle;
+}
+.menu{
+    text-align: center;
+}
+.searchBox {
+    text-align: right;       
+}
+img {
+    width: 80px;
+}
+a,
+li,
+ul {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+li {
+    margin: 0 20px;
+}
+
