@@ -1,0 +1,31 @@
+.cardConteiner{
+    width: 300px;
+    margin: 0 auto;
+}
+.boxImage{
+    height: 400px;
+}
+.boxImage img{
+    border-radius: 15px 15px 0 0;
+}
+.boxDescription{
+    border: 2px solid var(--color5);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    
+}
+.boxDescription h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.boxDescription h3{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+.boxDescription span{
+    font-size: 20px;
+    font-weight: 500;
+}

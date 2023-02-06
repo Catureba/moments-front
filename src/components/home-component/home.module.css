@@ -1,0 +1,31 @@
+.homeConteiner {
+    padding: 2% 0;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.box {
+    display: table;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.boxLeft,
+.boxRight {
+    display: table-cell;
+    width: 50%;
+    height: 600px;
+}
+
+.boxLeft {}
+
+.boxRight {
+    text-align: center;
+}
+
+.boxRight img {
+    width: 300px;
+}
+.boxRight h2{
+    margin-bottom: 20px;
+}
