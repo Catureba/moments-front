@@ -1,7 +1,7 @@
-form,input,button{
+.InputMoreButtonComponent form,input,button{
     display: inline-block; 
 }
-input{
+.InputMoreButtonComponent input{
     background-color: var(--color2);
     border: 2px solid var(--color4);
     border-right: none;
@@ -11,11 +11,11 @@ input{
     text-align: center;
     width: 140px;
 }
-input:focus{
+.InputMoreButtonComponent input:focus{
     border-color: var(--color2);
     content: 'te amo';
 }
-button{
+.InputMoreButtonComponent button{
     font-size: 16px;
     padding: 4px;
     background-color: var(--color2);
@@ -25,7 +25,7 @@ button{
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
+.InputMoreButtonComponent button:hover{
     background-color: var(--color5);
     color: var(--color1);
     border-color: var(--color5);

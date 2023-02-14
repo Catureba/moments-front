@@ -1,7 +1,9 @@
-import Card from '../assets/card-component/card';
+
+import Card from '../../components/card-component/card';
 import styles from './home.module.css'
 
 function Home() {
+
     return (
         <div className={styles.homeConteiner}>
             <div className={styles.box}>
@@ -13,7 +15,13 @@ function Home() {
 
                 <div className={styles.boxRight}>
                     <h2>This is a example</h2>
-                    <Card/>
+                    <Card
+                        name="Igreja da Matriz"
+                        image="https://cdn.discordapp.com/attachments/930965797097070613/1075122792149811210/first-image.jpg"
+                        date="15 Oct. from 2022"
+                        locale="Madre de Deus"
+                        description="We took a lot of pictures, had fun and visited Madre de Deus"
+                    />
                 </div>
             </div>
         </div>

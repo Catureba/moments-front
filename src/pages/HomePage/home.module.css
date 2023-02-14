@@ -1,0 +1,21 @@
+.homeConteiner{
+    width: 100%;
+}
+.box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.box > div{
+    margin:  50px auto 0;
+}
+
+@media (max-width: 700px){
+    *{
+        text-align: center;
+    }
+    .boxLeft{
+        width: 300px;
+    }
+}
