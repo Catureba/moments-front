@@ -1,17 +1,41 @@
+.headerConteiner{
+    background-color: var(--color3);
+}
 .box{
     display: flex;
-    max-width: 1200%;
-    height: 10vh;
+    max-width: 1200px;
+    height: auto;
     flex-wrap: wrap;
-    padding: 20px 50px;
-    background-color: var(--color3);
+    padding: 20px 0;
+    margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
+}
+.menu  ul , .inputBox{
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu li {
+    margin: 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
 }
 .logo img{
-    width: 50px;
+    width: 10vh;
+}
+
+.menu li{
+    display: inline-block;
 }
 .menuMobile{display: none;}
 
 .colapseOn{
     display: none;
+}
+@media (max-width: 700px){
+    .logo{
+        margin: auto;
+    }
 }

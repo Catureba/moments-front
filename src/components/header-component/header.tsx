@@ -27,7 +27,9 @@ function Header() {
                             <a href="http://localhost:3000/">Post</a>
                         </li>
                     </ul>
+                    <div className={styles.inputBox}>
                     <InputMoreButton />
+                    </div>
                 </div>
                 <div className={styles.menuMobile}>
                     <button onClick={() => { colapseMenuMobile() }}>
