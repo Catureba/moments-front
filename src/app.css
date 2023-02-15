@@ -29,3 +29,7 @@ h3{
 h4{
   font-size: 18px;
 }
+
+.colapseOn{
+  display: none;
+}

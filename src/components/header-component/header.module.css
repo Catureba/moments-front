@@ -1,7 +1,8 @@
-.headerConteiner{
+.headerConteiner {
     background-color: var(--color3);
 }
-.box{
+
+.box {
     display: flex;
     max-width: 1200px;
     height: auto;
@@ -11,31 +12,65 @@
     justify-content: space-between;
     align-items: center;
 }
-.menu  ul , .inputBox{
+
+.menu ul,
+.inputBox {
     display: inline-block;
     margin: 0 10px;
 }
+
 .menu li {
     margin: 0 10px;
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
-}
-.logo img{
-    width: 10vh;
+    display: inline-block;
 }
 
-.menu li{
-    display: inline-block;
+.logo img {
+    width: 10vh;
 }
 .menuMobile{display: none;}
 
-.colapseOn{
-    display: none;
-}
-@media (max-width: 700px){
-    .logo{
+
+@media (max-width: 700px) {
+    .logo {
         margin: auto;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .menuMobile {
+        display: block;
+        margin: auto;
+    }
+
+    .menuMobile li {
+        margin: 10px 0;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .menuMobile>button {
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        background-color: var(--color5);
+        border: none;
+        color: white;
+        rotate: 90deg;
+    }
+
+    .menuMobile>button:nth-child(2) {
+        rotate: 0deg;
+    }
+    .box{
+        display: block;
     }
 }

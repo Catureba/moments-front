@@ -4,9 +4,10 @@ import logo from '../../assets/logo.png'
 function Header() {
 
     function colapseMenuMobile() {
-        document.getElementById("menuMobileColapse")?.classList.add("colapseOn")
+        document.getElementById("menuMobileColapse")?.classList.toggle("colapseOn")
+        document.getElementById("buttonShow")?.classList.toggle("colapseOn")
+        document.getElementById("buttonHide")?.classList.toggle("colapseOn")
     }
-    const classNameVar = "colapseOn"
     return (
         <nav className={styles.headerConteiner}>
             <div className={styles.box}>
@@ -32,12 +33,24 @@ function Header() {
                     </div>
                 </div>
                 <div className={styles.menuMobile}>
-                    <button onClick={() => { colapseMenuMobile() }}>
-                        |||
+                    <button 
+                    onClick={colapseMenuMobile}
+                    id="buttonShow"
+                    >
+                        |  |  |
                     </button>
+                    <button 
+                    onClick={colapseMenuMobile}
+                    id="buttonHide"
+                    className='colapseOn'
+                    >
+                        X
+                    </button>
+                    
+
                     <ul 
                     id='menuMobileColapse'
-                    className={styles.colapseOn}>
+                    className="colapseOn">
                         <li>
                             <a href="http://localhost:3000/">Home</a>
                         </li>
@@ -47,11 +60,13 @@ function Header() {
                         <li>
                             <a href="http://localhost:3000/">Post</a>
                         </li>
+                        <InputMoreButton />
                     </ul>
-                    <InputMoreButton />
+                    
                 </div>
             </div>
         </nav>
+        
     );
 }
 export default Header;
