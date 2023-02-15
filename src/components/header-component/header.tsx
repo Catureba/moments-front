@@ -4,9 +4,9 @@ import logo from '../../assets/logo.png'
 function Header() {
 
     function colapseMenuMobile() {
-        document.getElementById("menuMobileColapse")?.classList.toggle("colapseOn")
-        document.getElementById("buttonShow")?.classList.toggle("colapseOn")
-        document.getElementById("buttonHide")?.classList.toggle("colapseOn")
+        document.getElementById("menuMobileColapse")?.classList.toggle("displayNone")
+        document.getElementById("buttonShow")?.classList.toggle("displayNone")
+        document.getElementById("buttonHide")?.classList.toggle("displayNone")
     }
     return (
         <nav className={styles.headerConteiner}>
@@ -42,7 +42,7 @@ function Header() {
                     <button 
                     onClick={colapseMenuMobile}
                     id="buttonHide"
-                    className='colapseOn'
+                    className='displayNone'
                     >
                         X
                     </button>
@@ -50,7 +50,7 @@ function Header() {
 
                     <ul 
                     id='menuMobileColapse'
-                    className="colapseOn">
+                    className="displayNone">
                         <li>
                             <a href="http://localhost:3000/">Home</a>
                         </li>
