@@ -1,6 +1,6 @@
 
-import Card from '../../components/card-component/card';
-import styles from './home.module.css'
+import Card from '../../components/card-component';
+import styles from './Home.module.css'
 
 function Home() {
 

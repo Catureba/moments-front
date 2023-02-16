@@ -1,35 +1,43 @@
 :root {
-    --color1: #fdffd9;
-    --color2: #fff0b8;
-    --color3: #ffd6a3;
-    --color4: #faad8e;
-    --color5: #142f30;  
-  }
-
-body{
-    background-color: var(--color1);
-    padding: 0;
-    margin: 0;
-    font-family: 'Itim', cursive;
-    color: var(--color5);
+  --color1: #fdffd9;
+  --color2: #fff0b8;
+  --color3: #ffd6a3;
+  --color4: #faad8e;
+  --color5: #142f30;
 }
-a{
+
+body {
+  background-color: var(--color1);
+  padding: 0;
+  margin: 0;
+  font-family: 'Itim', cursive;
+  color: var(--color5);
+}
+
+a {
   text-decoration: none;
   color: var(--color5);
 }
-h1{
+
+h1 {
   font-size: 48px;
 }
-h2{
+
+h2 {
   font-size: 36px;
 }
-h3{
+
+h3 {
   font-size: 24px;
 }
-h4{
+
+h4 {
   font-size: 18px;
 }
 
-.displayNone{
-  display: none;
+.colapse {
+  visibility: visible;
+  height: 200px;
+  transition: 1s;
+  overflow-y: hidden;
 }

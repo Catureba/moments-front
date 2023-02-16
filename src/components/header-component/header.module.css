@@ -2,75 +2,74 @@
     background-color: var(--color3);
 }
 
-.box {
+.headerConteiner header {
+    height: 100px;
     display: flex;
-    max-width: 1200px;
-    height: auto;
-    flex-wrap: wrap;
-    padding: 20px 0;
-    margin: 0 auto;
     justify-content: space-between;
+    padding: 0px 50px;
+    box-sizing: border-box;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.menu ul,
-.inputBox {
-    display: inline-block;
-    margin: 0 10px;
+.headerConteiner>header img {
+    width: 80px;
 }
 
-.menu li {
-    margin: 0 10px;
-    font-size: 22px;
+.headerConteiner>header>nav,
+ul {
+    display: flex;
+}
+
+.menu {
+    gap: 20px;
+    font-size: 20px;
     font-weight: bold;
+    padding: 5px 10px;
     cursor: pointer;
-    padding: 5px;
-    display: inline-block;
 }
 
-.logo img {
-    width: 10vh;
+.headerConteiner>header>nav>button {
+    display: none;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--color5);
+    color: white;
+    rotate: 90deg;
+    font-weight: bold;
 }
-.menuMobile{display: none;}
 
-
-@media (max-width: 700px) {
-    .logo {
-        margin: auto;
+@media (max-width: 600px) {
+    .headerConteiner>header>nav>button {
+        display: block;
     }
 
     .menu {
+        padding: 0;
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: var(--color3);
+        width: calc(100% - 50px);
+        height: 0px;
+        padding: 10px 0 0 50px;
+        z-index: 1000;
+        transition: 1s;
+        overflow-y: hidden;
+    }
+
+    .menu>li,
+    .menu>div {
+        margin-top: 20px;
+    }
+
+    .menuOpen {
         display: none;
-
-    }
-
-    .menuMobile {
-        display: block;
-        margin: auto;
-    }
-
-    .menuMobile li {
-        margin: 10px 0;
-        font-size: 22px;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 5px;
-    }
-
-    .menuMobile>button {
-        border-radius: 100px;
-        width: 50px;
-        height: 50px;
-        background-color: var(--color5);
-        border: none;
-        color: white;
-        rotate: 90deg;
-    }
-
-    .menuMobile>button:nth-child(2) {
-        rotate: 0deg;
-    }
-    .box{
-        display: block;
     }
 }

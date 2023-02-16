@@ -1,4 +1,4 @@
-import styles from './inputMoreButton.module.css'
+import styles from './InputMoreButton.module.css'
 function InputMoreButton() {
     return (
         <form action="" className={styles.InputMoreButtonComponent}>
