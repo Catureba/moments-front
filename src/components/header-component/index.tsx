@@ -4,11 +4,11 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-function Header() {
+export default function Header() {
 
-    const [state,setState] = useState("")
+    const [state, setState] = useState("")
 
-    function menuToggle(){
+    function menuToggle() {
         document.getElementById("menu")?.classList.toggle("colapse")
     }
 
@@ -46,4 +46,3 @@ function Header() {
         </div>
     );
 }
-export default Header;
